@@ -1,0 +1,14 @@
+---
+title: Rate Limiting
+description: This section provides information for rate limiting.
+---
+
+<Note type="danger">
+  Rate limiting only applies to requests on the `papaplatte-api.skre.dev` domain
+</Note>
+
+Our system implements a rate limiting policy to ensure the stability and performance of the service.
+
+## Request Rate Limit
+
+The current rate limit is configured to allow 1 request every 500 milliseconds. This means that a client is permitted to send a new request only after 500 milliseconds have passed since the last request.
