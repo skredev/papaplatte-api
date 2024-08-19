@@ -4,3 +4,56 @@ description: This section provides an Quick Start Guide.
 ---
 
 ## Get a random image
+
+The easiest and most common way to use the API is to get a random image.
+
+<Tabs defaultValue="curl" className="pt-5 pb-1">
+  <TabsList className="">
+    <TabsTrigger value="curl">Curl</TabsTrigger>
+    <TabsTrigger value="py">Python</TabsTrigger>
+    <TabsTrigger value="js">JavaScript</TabsTrigger>
+  </TabsList>
+  <TabsContent value="curl">
+```jsx {7} showLineNumbers
+curl -X GET \
+  "https://papaplatte-api.skre.dev/api/random" \
+  -H "Content-Type: application/json"
+```
+  </TabsContent>
+  <TabsContent value="py">
+```tsx {11} showLineNumbers
+import requests
+
+url = 'https://papaplatte-api.skre.dev/api/random'
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+    print(data)
+else:
+    print('Request failed with status code:', response.status_code)
+```
+  </TabsContent>
+  <TabsContent value="js">
+```jsx {11} showLineNumbers
+const apiUrl = 'https://papaplatte-api.skre.dev/api/random';
+const queryParams = new URLSearchParams();
+
+fetch(apiUrl)
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Request failed with status code: ' + response.status);
+    }
+  })
+  .then(data => {
+    // Process the response data as needed
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('An error occurred:', error.message);
+  });
+```
+  </TabsContent>
+</Tabs>
