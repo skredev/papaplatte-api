@@ -53,7 +53,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <img className="w-7 h-7" src="/favicon.ico"></img>
+      <img className="w-9 h-9" src="/favicon.ico"></img>
       <h2 className="text-md font-bold">Papaplatte API</h2>
     </Link>
   );
