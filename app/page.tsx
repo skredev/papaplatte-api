@@ -36,7 +36,7 @@ export default function Home() {
             size: "lg",
           })}
         >
-          {imageAmount() + " "} Images 
+          <span><span className="bg-zinc-800 p-1 rounded-lg font-bold">{imageAmount()}</span> Images</span>
         </div>
       </div>
       <span className="flex flex-row items-center gap-2 text-zinc-400 text-md mt-7 -mb-12 max-[800px]:mb-12">
