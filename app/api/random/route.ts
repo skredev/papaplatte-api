@@ -1,17 +1,11 @@
 import { NextResponse } from "next/server";
-import * as fs from 'fs';
-import * as path from 'path';
+import { randomImage } from "@/lib/randomImage"
+
+export const dynamic = 'force-dynamic'
 
 export async function GET() {
-    let amountImages: number = 0;
-    fs.readdirSync(path.join(__dirname, '../../../../../public/images')).forEach((file: string) => {
-        amountImages++;
-    });
-
-    console.log(amountImages);
-
     return NextResponse.json({
         'request': 'randomImage',
-        'imageUrl': 'https://papaplatte-api.skre.dev/images/' + Math.floor(Math.random() * amountImages) + '.jpg'
+        'imageUrl': 'https://papaplatte-api.skre.dev/images/' + randomImage() + '.jpg'
     });
 }
