@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { randomImage } from "@/lib/randomImage"
+import { randomImage } from "@/lib/api-utils"
 
 export const dynamic = 'force-dynamic'
 
