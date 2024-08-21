@@ -20,7 +20,7 @@ export default function Home() {
       </h1>
       <p className="mb-8 sm:text-xl max-w-[800px] text-muted-foreground">
       Mit dieser herausragenden API erhältst du die besten jemals aufgenommenen Bilder von unserem Freund Papaplatte
-      <img src="parasocialing.gif" className="ms-2 w-6 h-6 rounded-lg select-none inline-flex items-baseline" alt="123" />
+      <img src={"parasocialing.gif"} className="ms-2 w-6 h-6 rounded-lg select-none inline-flex items-baseline" alt={""} />
       </p>
       <div className="flex flex-row items-center gap-5">
         <Link
