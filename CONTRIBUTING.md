@@ -5,7 +5,7 @@ Thanks for contributing! We appreciate your support and look forward to your con
 ## Getting Started
 
 1. **Fork this repository to your own GitHub account.**  
-   Click [here](https://github.com/sprechblase/papaplatte-api/fork) to fork the repository.
+   Click [here](https://github.com/skredev/papaplatte-api/fork) to fork the repository.
 
 2. **Clone the forked repository to your local machine.**
    
